@@ -1,0 +1,870 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-jetson series/PE1100N" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">PE1100N | ASUS IoT</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://yiching1201.github.io/yichingTest/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://yiching1201.github.io/yichingTest/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://yiching1201.github.io/yichingTest/docs/jetson series/PE1100N"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="PE1100N | ASUS IoT"><meta data-rh="true" name="description" content="1. Flash Image"><meta data-rh="true" property="og:description" content="1. Flash Image"><link data-rh="true" rel="icon" href="/yichingTest/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://yiching1201.github.io/yichingTest/docs/jetson series/PE1100N"><link data-rh="true" rel="alternate" href="https://yiching1201.github.io/yichingTest/docs/jetson series/PE1100N" hreflang="en"><link data-rh="true" rel="alternate" href="https://yiching1201.github.io/yichingTest/docs/jetson series/PE1100N" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"NVIDIA Jetson Series","item":"https://yiching1201.github.io/yichingTest/docs/category/nvidia-jetson-series"},{"@type":"ListItem","position":2,"name":"PE1100N","item":"https://yiching1201.github.io/yichingTest/docs/jetson series/PE1100N"}]}</script><link rel="alternate" type="application/rss+xml" href="/yichingTest/blog/rss.xml" title="ASUS IoT RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/yichingTest/blog/atom.xml" title="ASUS IoT Atom Feed"><link rel="stylesheet" href="/yichingTest/assets/css/styles.a7778f11.css">
+<script src="/yichingTest/assets/js/runtime~main.7e1e5ae4.js" defer="defer"></script>
+<script src="/yichingTest/assets/js/main.cc6fcc1a.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/yichingTest/img/logo.svg"><link rel="preload" as="image" href="https://github.com/user-attachments/assets/4076fdd4-5e67-46ec-9054-c4023e7f9f31"><link rel="preload" as="image" href="https://github.com/user-attachments/assets/03fa59f9-c293-45d4-a52d-ce4828cfb1d9"><link rel="preload" as="image" href="https://github.com/user-attachments/assets/0fc6fd35-9707-4179-9292-2e304c672904"><link rel="preload" as="image" href="https://github.com/user-attachments/assets/32b72e4e-14eb-4846-aae3-766094638177"><link rel="preload" as="image" href="https://github.com/user-attachments/assets/790c20b2-7802-40d1-9f9b-675823b1a7bb"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/yichingTest/"><div class="navbar__logo"><img src="/yichingTest/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/yichingTest/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">ASUS IoT</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/yichingTest/docs/category/nvidia-jetson-series">Docs</a><a class="navbar__item navbar__link" href="/yichingTest/blog">Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/yichingTest/docs/category/nvidia-jetson-series">NVIDIA Jetson Series</a><button aria-label="Collapse sidebar category &#x27;NVIDIA Jetson Series&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/yichingTest/docs/jetson series/PE1100N">PE1100N</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/yichingTest/docs/jetson series/PE2100N PE2101N">PE2100N, PE2101N</a></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/yichingTest/docs/intro">Tutorial Intro</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/yichingTest/docs/category/tutorial---basics">Tutorial - Basics</a><button aria-label="Expand sidebar category &#x27;Tutorial - Basics&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/yichingTest/docs/category/tutorial---extras">Tutorial - Extras</a><button aria-label="Expand sidebar category &#x27;Tutorial - Extras&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/yichingTest/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/yichingTest/docs/category/nvidia-jetson-series"><span>NVIDIA Jetson Series</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">PE1100N</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>PE1100N</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-flash-image">1. Flash Image<a href="#1-flash-image" class="hash-link" aria-label="Direct link to 1. Flash Image" title="Direct link to 1. Flash Image">​</a></h2>
+<p>PE1100N only support flash image via Ubuntu and doesn&#x27;t support flash image via Windows.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="11-recovery-mode">1.1 Recovery Mode<a href="#11-recovery-mode" class="hash-link" aria-label="Direct link to 1.1 Recovery Mode" title="Direct link to 1.1 Recovery Mode">​</a></h3>
+<ol>
+<li>
+<p><strong>System Requirement</strong></p>
+<p>• Linux Host Computer (x86 Ubuntu 18.04 and above)</p>
+<p>• Micro USB cable</p>
+</li>
+<li>
+<p><strong>Enter Force Recovery Mode</strong><br>
+<!-- -->For PE1100N Box, the Flash Port is number ❷, and the Force Recovery Button is number ❹.
+<img decoding="async" loading="lazy" src="https://user-images.githubusercontent.com/97945168/236100307-e4562179-e662-424f-9853-5b67d3f4834f.png" alt="234836537-a91d0518-55ef-4694-a575-fd1345164753" class="img_ev3q"></p>
+</li>
+</ol>
+<p>Please perform the following steps to force the PE1100N to enter force recovery mode:</p>
+<p><strong>[PE1100N]</strong></p>
+<ol>
+<li>Power off the PE1100N and remove the power cable.</li>
+<li>Connect Host Computer and PE1100N Flash Port (number ❷) with Micro USB cable.</li>
+<li>Press and hold the Force Recovery Button (number ❹).</li>
+<li>Connect the power cable and Power ON the PE1100N.</li>
+<li>After 3s release the Force Recovery Button.</li>
+</ol>
+<p><strong>[Host Computer]</strong></p>
+<p>On the Linux host PC, open a Terminal window and enter the command <code>lsusb</code>. If the returned content has one of the following outputs according to the Jetson SoM you use, then the board is in force recovery mode.</p>
+<p><img decoding="async" loading="lazy" src="https://user-images.githubusercontent.com/97945168/236101253-dd90c67d-2ceb-48a5-83b6-02b57e710244.png" alt="234836868-50478e57-027e-4784-a458-51d325f5b256" class="img_ev3q"></p>
+<p>• For Orin NX 16GB: 0955:7323 NVidia Corp<br>
+<!-- -->• For Orin NX 8GB: 0955:7423 NVidia Corp<br>
+<!-- -->• For Orin Nano 8GB: 0955:7523 NVidia Corp<br>
+<!-- -->• For Orin Nano 4GB: 0955:7623 NVidia Corp</p>
+<p> </p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="12-flash-image">1.2 Flash Image<a href="#12-flash-image" class="hash-link" aria-label="Direct link to 1.2 Flash Image" title="Direct link to 1.2 Flash Image">​</a></h3>
+<p><strong>[Host Computer]</strong></p>
+<ol>
+<li>
+<p>Extract BSP file on Host Computer.</p>
+<p>BSP file example :</p>
+</li>
+</ol>
+<table><thead><tr><th>System</th><th>File Name</th></tr></thead><tbody><tr><td>PE1100N Orin Nano 4GB</td><td>PE1100N Orin Nano 4GB JetPack x.x.x Image Vx.x.x</td></tr><tr><td>PE1100N Orin Nano 8GB</td><td>PE1100N Orin Nano 8GB JetPack x.x.x Image Vx.x.x</td></tr><tr><td>PE1100N Orin NX 16GB</td><td>PE1100N Orin NX 16GB JetPack x.x.x Image Vx.x.x</td></tr></tbody></table>
+<p>Download Link : <a href="https://www.asus.com/networking-iot-servers/aiot-industrial-solutions/embedded-computers-edge-ai-systems/pe1100n/helpdesk_download?model2Name=PE1100N" target="_blank" rel="noopener noreferrer">https://www.asus.com/networking-iot-servers/aiot-industrial-solutions/embedded-computers-edge-ai-systems/pe1100n/helpdesk_download?model2Name=PE1100N</a></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sudo tar xvpf PE1100N_JXANS_Orin-NX-16GB_JetPack-ssd-5.1.1_L4T-35.3.1_v0.1.3-debug-20230503.tar.gz</span><br></span></code></pre></div></div>
+<ol start="2">
+<li>Change folder</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">cd mfi_PE110xxxxxxxx  </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo ./tools/kernel_flash/l4t_initrd_flash.sh --erase-all --flash-only --showlogs --network usb0</span><br></span></code></pre></div></div>
+<ol start="3">
+<li>Flashing the image takes around 15 minutes.</li>
+</ol>
+<p><strong>[PE1100N]</strong><br>
+<!-- -->After 15 minutes, PE1100N will auto reboot.</p>
+<blockquote>
+<p>NOTE :</p>
+<ol>
+<li>Do not use a USB Hub between Host Computer and PE1100N.</li>
+<li>You can know the process of flashing image from “mfi_PE1100N-orin/initrdlog”.</li>
+</ol>
+</blockquote>
+<p> </p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-build-image">2. Build Image<a href="#2-build-image" class="hash-link" aria-label="Direct link to 2. Build Image" title="Direct link to 2. Build Image">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="21-jetpack-60-image">2.1 Jetpack 6.0 image<a href="#21-jetpack-60-image" class="hash-link" aria-label="Direct link to 2.1 Jetpack 6.0 image" title="Direct link to 2.1 Jetpack 6.0 image">​</a></h3>
+<ol>
+<li>Installation Prerequisites</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo apt update</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo apt install -y apt-utils bc build-essential cpio curl \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">device-tree-compiler expect gawk gdisk git kmod liblz4-tool libssl-dev \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">locales parted python python3 qemu-user-static rsync \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">software-properties-common sudo time tzdata udev unzip wget zip \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">nfs-kernel-server uuid-runtime</span><br></span></code></pre></div></div>
+<ol start="2">
+<li>Download and prepare the Linux_for_Tegra source code</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ wget https://developer.nvidia.com/downloads/embedded/l4t/r36_release_v3.0/release/jetson_linux_r36.3.0_aarch64.tbz2</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ tar xf jetson_linux_r36.3.0_aarch64.tbz2</span><br></span></code></pre></div></div>
+<ol start="3">
+<li>Download and prepare sample root file system</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ wget https://developer.nvidia.com/downloads/embedded/l4t/r36_release_v3.0/release/tegra_linux_sample-root-filesystem_r36.3.0_aarch64.tbz2</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo tar xpf tegra_linux_sample-root-filesystem_r36.3.0_aarch64.tbz2 -C Linux_for_Tegra/rootfs/</span><br></span></code></pre></div></div>
+<ol start="4">
+<li>Sync the source code for compiling</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ cd Linux_for_Tegra/source/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ ./source_sync.sh -t jetson_36.3</span><br></span></code></pre></div></div>
+<p>If the following error occurs, please wait for Nvidia to provide a fix.
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/7a2b4746-4175-409c-8fc4-a8b391f18fa3" alt="NV_fatal_error" class="img_ev3q"></p>
+<p>reference:
+<a href="https://forums.developer.nvidia.com/t/unable-to-connect-to-nv-tegra-nvidia-com/334353" target="_blank" rel="noopener noreferrer">https://forums.developer.nvidia.com/t/unable-to-connect-to-nv-tegra-nvidia-com/334353</a></p>
+<ol start="5">
+<li>
+<p>Download the patch file for PE1100N</p>
+<p><a href="https://drive.google.com/file/d/12wBWT0YSfkDncw0JbIJu2hYsKAeRnzTu/view?usp=sharing" target="_blank" rel="noopener noreferrer">https://drive.google.com/file/d/12wBWT0YSfkDncw0JbIJu2hYsKAeRnzTu/view?usp=sharing</a></p>
+</li>
+<li>
+<p>Overwrite the original source code by patch files</p>
+</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ cd ../..</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># Copy the PE1100N_r3630_patch.tar.gz to this folder.</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ tar zxf PE1100N_r3630_patch.tar.gz</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo cp -r PE1100N_r3630_patch/Linux_for_Tegra/* Linux_for_Tegra/</span><br></span></code></pre></div></div>
+<p><strong>For Nano 4G only</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo cp PE1100N_r3630_patch/nano_4g_patch/chip_info.bin_bak Linux_for_Tegra/bootloader </span><br></span></code></pre></div></div>
+<ol start="7">
+<li>Apply necessary changes to rootfs</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ cd Linux_for_Tegra</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo ./apply_binaries.sh</span><br></span></code></pre></div></div>
+<ol start="8">
+<li>Download and install the toolchain</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ wget https://developer.nvidia.com/downloads/embedded/l4t/r36_release_v3.0/toolchain/aarch64--glibc--stable-2022.08-1.tar.bz2</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo tar xf aarch64--glibc--stable-2022.08-1.tar.bz2 -C /opt</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ rm aarch64--glibc--stable-2022.08-1.tar.bz2</span><br></span></code></pre></div></div>
+<ol start="9">
+<li>Build the kernel</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ cd source</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ export ARCH=arm64</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ export CROSS_COMPILE=/opt/aarch64--glibc--stable-2022.08-1/bin/aarch64-linux-</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ ./nvbuild_asus.sh</span><br></span></code></pre></div></div>
+<ol start="10">
+<li>Install new kernel dtbs and kernel modules</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ ./do_copy.sh</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ export INSTALL_MOD_PATH=`realpath ../rootfs/`</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ ./nvbuild_asus.sh -i</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ cd ..</span><br></span></code></pre></div></div>
+<ol start="11">
+<li>Pre-install JetPack SDK (optional)</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo sed -i &quot;s/&lt;SOC&gt;/t234/g&quot; rootfs/etc/apt/sources.list.d/nvidia-l4t-apt-source.list</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo cp /usr/bin/qemu-aarch64-static rootfs/usr/bin/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo mount --bind /sys ./rootfs/sys</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo mount --bind /dev ./rootfs/dev</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo mount --bind /dev/pts ./rootfs/dev/pts</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo mount --bind /proc ./rootfs/proc</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo chroot rootfs</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># apt update</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># apt install -y nvidia-jetpack</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># apt clean</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># exit</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo umount ./rootfs/sys</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo umount ./rootfs/dev/pts</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo umount ./rootfs/dev</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo umount ./rootfs/proc</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo rm rootfs/usr/bin/qemu-aarch64-static</span><br></span></code></pre></div></div>
+<ol start="12">
+<li>Flash the device</li>
+</ol>
+<ul>
+<li>Orin NX 16G</li>
+</ul>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo BOARDID=3767 BOARDSKU=0000 ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 -c tools/kernel_flash/flash_l4t_t234_nvme.xml -p &quot;-c bootloader/generic/cfg/flash_t234_qspi.xml&quot; --showlogs --network usb0 PE1100N-orin internal</span><br></span></code></pre></div></div>
+<ul>
+<li>Orin NX 8G</li>
+</ul>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo BOARDID=3767 BOARDSKU=0001 ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 -c tools/kernel_flash/flash_l4t_t234_nvme.xml -p &quot;-c bootloader/generic/cfg/flash_t234_qspi.xml&quot; --showlogs --network usb0 PE1100N-orin internal</span><br></span></code></pre></div></div>
+<ul>
+<li>Orin Nano 8G</li>
+</ul>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo BOARDID=3767 BOARDSKU=0003 ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 -c tools/kernel_flash/flash_l4t_t234_nvme.xml -p &quot;-c bootloader/generic/cfg/flash_t234_qspi.xml&quot; --showlogs --network usb0 PE1100N-orin internal</span><br></span></code></pre></div></div>
+<ul>
+<li>Orin Nano 4G</li>
+</ul>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo BOARDID=3767 BOARDSKU=0004 ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 -c tools/kernel_flash/flash_l4t_t234_nvme.xml -p &quot;-c bootloader/generic/cfg/flash_t234_qspi.xml&quot; --showlogs --network usb0 PE1100N-orin internal</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo rm bootloader/chip_info.bin_bak</span><br></span></code></pre></div></div>
+<p> </p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="22-jetpack-62-image">2.2 Jetpack 6.2 image<a href="#22-jetpack-62-image" class="hash-link" aria-label="Direct link to 2.2 Jetpack 6.2 image" title="Direct link to 2.2 Jetpack 6.2 image">​</a></h3>
+<ol>
+<li>Installing Prerequisites</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo apt update</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo apt install -y apt-utils bc build-essential cpio curl \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">device-tree-compiler expect gawk gdisk git kmod liblz4-tool libssl-dev \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">locales parted python3 qemu-user-static rsync \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">software-properties-common sudo time tzdata udev unzip wget zip \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">nfs-kernel-server uuid-runtime</span><br></span></code></pre></div></div>
+<ol start="2">
+<li>Download and prepare the Linux_for_Tegra source code</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ wget https://developer.nvidia.com/downloads/embedded/l4t/r36_release_v4.3/release/Jetson_Linux_r36.4.3_aarch64.tbz2</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ tar xf Jetson_Linux_r36.4.3_aarch64.tbz2</span><br></span></code></pre></div></div>
+<ol start="3">
+<li>Download and prepare sample root file system</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ wget https://developer.nvidia.com/downloads/embedded/l4t/r36_release_v4.3/release/Tegra_Linux_Sample-Root-Filesystem_r36.4.3_aarch64.tbz2</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo tar xpf Tegra_Linux_Sample-Root-Filesystem_r36.4.3_aarch64.tbz2 -C Linux_for_Tegra/rootfs/</span><br></span></code></pre></div></div>
+<ol start="4">
+<li>Sync the source code for compiling</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ cd Linux_for_Tegra/source/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ ./source_sync.sh -t jetson_36.4.3</span><br></span></code></pre></div></div>
+<ul>
+<li>
+<p>If the following error occurs, please wait for Nvidia to fix it.</p>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/e53d3db9-45d7-487c-bf5f-b51f96e5675a" alt="圖片1" class="img_ev3q"></p>
+<p>Reference: <a href="https://forums.developer.nvidia.com/t/unable-to-connect-to-nv-tegra-nvidia-com/334353" target="_blank" rel="noopener noreferrer">https://forums.developer.nvidia.com/t/unable-to-connect-to-nv-tegra-nvidia-com/334353</a></p>
+</li>
+</ul>
+<ol start="5">
+<li>
+<p>Download the patch file for PE1100N</p>
+<p><a href="https://drive.google.com/file/d/14sQxWWBMq40wqrE8U0H9MEENZv54nCK4/view?usp=sharing" target="_blank" rel="noopener noreferrer">https://drive.google.com/file/d/14sQxWWBMq40wqrE8U0H9MEENZv54nCK4/view?usp=sharing</a></p>
+<p>Copy it in the same location as the Linux_for_Tegra folder.</p>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/7d5b2eee-9ae4-4e5f-b904-a296c93eef16" alt="圖片2" class="img_ev3q"></p>
+</li>
+<li>
+<p>Overwrite the original source code by patch files</p>
+</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ cd ../..</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ tar zxf PE1100N_v2.0.11_patch.tar.gz</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo cp -r PE1100N_v2.0.11_patch/Linux_for_Tegra/* Linux_for_Tegra/</span><br></span></code></pre></div></div>
+<ol start="7">
+<li>Apply necessary changes to rootfs</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ cd Linux_for_Tegra</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo ./apply_binaries.sh</span><br></span></code></pre></div></div>
+<ol start="8">
+<li>Download and install the toolchain</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ wget https://developer.nvidia.com/downloads/embedded/l4t/r36_release_v3.0/toolchain/aarch64--glibc--stable-2022.08-1.tar.bz2</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo tar xf aarch64--glibc--stable-2022.08-1.tar.bz2 -C /opt</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ rm aarch64--glibc--stable-2022.08-1.tar.bz2</span><br></span></code></pre></div></div>
+<ol start="9">
+<li>Build the kernel</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ cd source</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ export ARCH=arm64</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ export CROSS_COMPILE=/opt/aarch64--glibc--stable-2022.08-1/bin/aarch64-linux-</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ ./nvbuild_asus.sh</span><br></span></code></pre></div></div>
+<ol start="10">
+<li>Install new kernel dtbs and kernel modules</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ ./do_copy.sh</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ export INSTALL_MOD_PATH=`realpath ../rootfs/`</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ ./nvbuild_asus.sh -i</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ cd ..</span><br></span></code></pre></div></div>
+<ol start="11">
+<li>Pre-install JetPack SDK (optional)</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo sed -i &quot;s/&lt;SOC&gt;/t234/g&quot; rootfs/etc/apt/sources.list.d/nvidia-l4t-apt-source.list</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo cp /usr/bin/qemu-aarch64-static rootfs/usr/bin/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo mount --bind /sys ./rootfs/sys</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo mount --bind /dev ./rootfs/dev</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo mount --bind /dev/pts ./rootfs/dev/pts</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo mount --bind /proc ./rootfs/proc</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo chroot rootfs</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># apt update</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># apt install -y nvidia-jetpack</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># apt clean</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># exit</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo umount ./rootfs/sys</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo umount ./rootfs/dev/pts</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo umount ./rootfs/dev</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo umount ./rootfs/proc</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo rm rootfs/usr/bin/qemu-aarch64-static</span><br></span></code></pre></div></div>
+<ol start="12">
+<li>Build the SSD image</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo build.sh</span><br></span></code></pre></div></div>
+<ul>
+<li>Select the SOM you are using.</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/45651294-8d69-4150-b722-1a2e1a53c154" alt="圖片3" class="img_ev3q"></p>
+<ul>
+<li>Build success will be shown as in the image below.</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/8923660a-579c-4aaf-9224-67630bd5dd54" alt="圖片4" class="img_ev3q"></p>
+<ul>
+<li>The image will be generated in the mfi_PE1100N-orin folder and will be packaged as mfi_PE1100N-orin.tar.gz.</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/fe0e4328-67ee-4631-9d5d-9d064db3ebfd" alt="圖片5" class="img_ev3q"></p>
+<ol start="13">
+<li>Flash image to device</li>
+</ol>
+<p>Installing the flash requirements</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo ./tools/l4t_flash_prerequisites.sh</span><br></span></code></pre></div></div>
+<p>Set up the device in recovery mode, then flash the image.</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ cd mfi_PE1100N-orin</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --erase-all --flash-only --showlogs --network usb0</span><br></span></code></pre></div></div>
+<p> </p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-upgrade-to-jetpack-61">3. Upgrade to Jetpack 6.1<a href="#3-upgrade-to-jetpack-61" class="hash-link" aria-label="Direct link to 3. Upgrade to Jetpack 6.1" title="Direct link to 3. Upgrade to Jetpack 6.1">​</a></h2>
+<ol>
+<li>Please make sure your OS is Jetpack 6.0</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ cat /etc/nv_tegra_release</span><br></span></code></pre></div></div>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/d090a596-fdd4-474a-bdbc-5d2a167b104d" alt="123" class="img_ev3q"></p>
+<ol start="2">
+<li>Add the R36.4/JP 6.1</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ echo &quot;deb https://repo.download.nvidia.com/jetson/common r36.4 main&quot; | sudo tee -a /etc/apt/sources.list.d/nvidia-l4t-apt-source.list</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ echo &quot;deb https://repo.download.nvidia.com/jetson/t234 r36.4 main&quot; | sudo tee -a /etc/apt/sources.list.d/nvidia-l4t-apt-source.list</span><br></span></code></pre></div></div>
+<ol start="3">
+<li>Update the apt</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo apt-get update</span><br></span></code></pre></div></div>
+<ol start="4">
+<li>Install Jetpack compute components</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo apt-get install nvidia-jetpack</span><br></span></code></pre></div></div>
+<ol start="5">
+<li>Remove the R36.4/JP 6.1 repo to avoid installing <strong>nvidia-l4t bsp</strong> packages accidentally later<br>
+<strong>Important</strong><br>
+<!-- -->Do not use <strong>apt-get upgrade</strong> because that will upgrade L4T packages too</li>
+</ol>
+<p><strong>For more details, please follow the link below from NVIDIA official website.</strong><br>
+<a href="https://docs.nvidia.com/jetson/archives/jetpack-archived/jetpack-61/install-setup/index.html#upgradable-compute-stack" target="_blank" rel="noopener noreferrer">https://docs.nvidia.com/jetson/archives/jetpack-archived/jetpack-61/install-setup/index.html#upgradable-compute-stack</a></p>
+<p> </p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="4-backup-and-restore-os-image">4. Backup and Restore OS image<a href="#4-backup-and-restore-os-image" class="hash-link" aria-label="Direct link to 4. Backup and Restore OS image" title="Direct link to 4. Backup and Restore OS image">​</a></h2>
+<blockquote>
+<p>For Jetpack 5 &amp; Jetpack 6</p>
+</blockquote>
+<p><strong>Prerequisites</strong><br>
+<!-- -->a. Ubuntu Host PC 20.04 or 22.04<br>
+<!-- -->b. Micro USB cable</p>
+<ol>
+<li>Installing Prerequisites</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo apt update</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo apt install -y abootimg binfmt-support binutils cpio cpp device-tree-compiler dosfstools \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">iproute2 iputils-ping lbzip2 libxml2-utils netcat nfs-kernel-server openssl python3-yaml qemu-user-static \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">rsync sshpass udev uuid-runtime whois xmlstarlet zstd lz4 chrpath diffstat xxd wget bc</span><br></span></code></pre></div></div>
+<ol start="2">
+<li>Download and prepare the Nvidia Jetpack SDK</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ wget https://developer.nvidia.com/downloads/embedded/l4t/r36_release_v4.3/release/Jetson_Linux_r36.4.3_aarch64.tbz2</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ tar xf Jetson_Linux_r36.4.3_aarch64.tbz2</span><br></span></code></pre></div></div>
+<p>After extracting the Jetson_Linux_r36.4.3_aarch64.tbz2 file, you will see a Linux_for_Tegra folder.</p>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/d34f005c-3535-4c72-9368-af68aa5a5283" alt="圖片1" class="img_ev3q"></p>
+<ol start="3">
+<li>Download and prepare sample root file system</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ wget https://developer.nvidia.com/downloads/embedded/l4t/r36_release_v4.3/release/Tegra_Linux_Sample-Root-Filesystem_r36.4.3_aarch64.tbz2</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo tar xpf Tegra_Linux_Sample-Root-Filesystem_r36.4.3_aarch64.tbz2 -C Linux_for_Tegra/rootfs/</span><br></span></code></pre></div></div>
+<ol start="4">
+<li>
+<p>Download the backup and restore patch file for PE1100N</p>
+<p><a href="https://drive.google.com/file/d/13ncd179x_MB6-fYrm05OT7KIpm20B4v_/view?usp=sharing" target="_blank" rel="noopener noreferrer">https://drive.google.com/file/d/13ncd179x_MB6-fYrm05OT7KIpm20B4v_/view?usp=sharing</a></p>
+</li>
+<li>
+<p>Place the file PE1100N_backup_restore_patch.tar in the same directory as the Linux_for_Tegra folder</p>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/1ca78490-9918-400a-8247-68c479036be2" alt="圖片2" class="img_ev3q"></p>
+</li>
+<li>
+<p>Overwrite the original SDK by patch files</p>
+</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ tar xf PE1100N_backup_restore_patch.tar</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo cp -r PE1100N_backup_restore_patch/Linux_for_Tegra/* Linux_for_Tegra</span><br></span></code></pre></div></div>
+<ol start="7">
+<li>Applies the binaries to the rootfs.</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ cd Linux_for_Tegra</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo ./ apply_binaries.sh</span><br></span></code></pre></div></div>
+<ol start="8">
+<li>
+<p>Create the backup image</p>
+<p>a. Enter Force Recovery Mode on the PE1100N</p>
+<ul>
+<li>Power off the PE1100N and remove the power cable.</li>
+<li>Connect Host Computer and PE1100N Flash Port with Micro USB cable.</li>
+<li>Press and hold the Force Recovery Button.</li>
+<li>Connect the power cable and Power ON the PE1100N.</li>
+<li>After 3s release the Force Recovery Button.</li>
+</ul>
+<p>b. Run this command from the Linux_for_Tegra folder on host PC:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo ./PE1100N_backup.sh</span><br></span></code></pre></div></div>
+<p>If this command completes successfully, a backup image is stored in <strong>Linux_for_Tegra/tools/backup_restore/images.</strong></p>
+<p>c. After successful backup, you can manually reset the device.</p>
+</li>
+<li>
+<p>Restore a PE1100N using a backup image</p>
+<p>a. Enter Force Recovery Mode on the PE1100N</p>
+<ul>
+<li>Power off the PE1100N and remove the power cable.</li>
+<li>onnect Host Computer and PE1100N Flash Port with Micro USB cable.</li>
+<li>Press and hold the Force Recovery Button.</li>
+<li>Connect the power cable and Power ON the PE1100N.</li>
+<li>After 3s release the Force Recovery Button.</li>
+</ul>
+<p>b. Run this command from the Linux_for_Tegra folder on host PC:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">$ sudo ./PE1100N_restore.sh</span><br></span></code></pre></div></div>
+<p>c. After successful restore, you can manually reset the device.</p>
+</li>
+</ol>
+<p> </p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="5-os-and-nvidia-sdk-version-mapping-table">5. OS and NVIDIA SDK Version Mapping Table<a href="#5-os-and-nvidia-sdk-version-mapping-table" class="hash-link" aria-label="Direct link to 5. OS and NVIDIA SDK Version Mapping Table" title="Direct link to 5. OS and NVIDIA SDK Version Mapping Table">​</a></h2>
+<p>Please refer to the table below for recommended OS versions and NVIDIA SDK versions for each image version</p>
+<table><thead><tr><th>PE1100N official release version</th><th>L4T</th><th>Ubuntu</th><th>JetPack</th><th>CUDA</th><th>DeepStream SDK</th><th>cuDNN</th><th>TensorRT</th></tr></thead><tbody><tr><td>V1.0.0</td><td>35.3.1</td><td>20.04</td><td>5.1.1</td><td>11.4.19</td><td>6.2</td><td>8.6.0</td><td>8.5.2</td></tr><tr><td>V1.1.1</td><td>35.4.1</td><td>20.04</td><td>5.1.2</td><td>11.4.19</td><td>6.3</td><td>8.6.0</td><td>8.5.2</td></tr><tr><td>V2.0.5</td><td>36.3.0</td><td>22.04</td><td>6.0</td><td>12.2.2</td><td>6.4/7.0</td><td>8.9.4</td><td>8.6.2</td></tr><tr><td>V2.0.6</td><td>36.3.0</td><td>22.04</td><td>6.0</td><td>12.2.2</td><td>6.4/7.0</td><td>8.9.4</td><td>8.6.2</td></tr><tr><td>V2.0.7</td><td>36.4.0</td><td>22.04</td><td>6.1</td><td>12.6.10</td><td>7.1</td><td>9.3.0</td><td>10.3.0</td></tr><tr><td>V2.0.11</td><td>36.4.3</td><td>22.04</td><td>6.2</td><td>12.6.10</td><td>7.1</td><td>9.3.0</td><td>10.3.0</td></tr></tbody></table>
+<p> </p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="6-lte-setting">6. LTE Setting<a href="#6-lte-setting" class="hash-link" aria-label="Direct link to 6. LTE Setting" title="Direct link to 6. LTE Setting">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="61-how-to-set-up-a-sim-card">6.1 How to set up a SIM card<a href="#61-how-to-set-up-a-sim-card" class="hash-link" aria-label="Direct link to 6.1 How to set up a SIM card" title="Direct link to 6.1 How to set up a SIM card">​</a></h3>
+<blockquote>
+<p>NOTE : Please insert the SIM card and power on the device.</p>
+</blockquote>
+<ol>
+<li>
+<p>Click to open the settings bar at the top right side of the desktop.
+<img decoding="async" loading="lazy" src="https://user-images.githubusercontent.com/97945168/231966032-dd9d8c75-10d2-4216-93fb-a8fc2821e20d.png" alt="1" class="img_ev3q"></p>
+</li>
+<li>
+<p>Click <strong>Mobile Broadband Settings</strong>
+<img decoding="async" loading="lazy" src="https://user-images.githubusercontent.com/97945168/231969996-94c577b8-9da4-4745-b038-fc4dd97f890e.png" alt="2" class="img_ev3q"></p>
+</li>
+<li>
+<p><strong>Switch on</strong> the Mobile Broadband to enable LTE function<br>
+<img decoding="async" loading="lazy" src="https://user-images.githubusercontent.com/97945168/231969834-b638a478-a641-451a-bd67-cc5efabaad10.png" alt="3" class="img_ev3q"></p>
+</li>
+<li>
+<p>Open the Network bar below the IMEI
+<img decoding="async" loading="lazy" src="https://user-images.githubusercontent.com/97945168/231970092-bce09542-34ce-4295-8630-d6d63a83d987.png" alt="4" class="img_ev3q"></p>
+</li>
+<li>
+<p>Select <strong>Add new connection</strong>
+<img decoding="async" loading="lazy" src="https://user-images.githubusercontent.com/97945168/231970265-283963c5-d8f7-409c-bb67-80a8031e06fc.png" alt="5" class="img_ev3q"></p>
+</li>
+<li>
+<p>Click <strong>Next</strong> on the top right of the window
+<img decoding="async" loading="lazy" src="https://user-images.githubusercontent.com/97945168/231970371-44229d11-56c5-415e-ac65-880ab5c233d0.png" alt="6" class="img_ev3q"></p>
+</li>
+<li>
+<p>Select your country
+<img decoding="async" loading="lazy" src="https://user-images.githubusercontent.com/97945168/231970488-5973f48e-468a-4267-9580-a3618c426136.png" alt="7" class="img_ev3q"></p>
+</li>
+<li>
+<p>Select your provider
+<img decoding="async" loading="lazy" src="https://user-images.githubusercontent.com/97945168/231970586-22849047-c3ef-480b-a8cc-21ddb1c4accd.png" alt="8" class="img_ev3q"></p>
+</li>
+<li>
+<p>Select your plan
+<img decoding="async" loading="lazy" src="https://user-images.githubusercontent.com/97945168/231970677-969024cb-710f-4cca-b50d-92ea9f8ca791.png" alt="9" class="img_ev3q"></p>
+</li>
+<li>
+<p>Click <strong>Apply</strong> on the top right of the window
+<img decoding="async" loading="lazy" src="https://user-images.githubusercontent.com/97945168/231970778-75142ec2-69f5-4b00-8d6c-ed6f9dc3eafb.png" alt="10" class="img_ev3q"></p>
+</li>
+<li>
+<p>It will use this configure to connect to the internet automatically
+<img decoding="async" loading="lazy" src="https://user-images.githubusercontent.com/97945168/231971724-31e3d906-5bdc-4b6f-906f-44204a14d7c8.png" alt="11" class="img_ev3q"></p>
+</li>
+<li>
+<p>The current signal strength also appear on the settings bar
+<img decoding="async" loading="lazy" src="https://user-images.githubusercontent.com/97945168/231971835-85c0f2f1-c064-44d8-98cb-2e4ae3e4348b.png" alt="12" class="img_ev3q"></p>
+</li>
+</ol>
+<p> </p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="62-how-to-switch-sim-card-slot">6.2 How to switch SIM card slot<a href="#62-how-to-switch-sim-card-slot" class="hash-link" aria-label="Direct link to 6.2 How to switch SIM card slot" title="Direct link to 6.2 How to switch SIM card slot">​</a></h3>
+<ol>
+<li>
+<p>Open <strong>Terminal</strong> on the desktop
+<img decoding="async" loading="lazy" src="https://user-images.githubusercontent.com/97945168/231972759-b07dd9ef-dfa4-40f6-a4ad-736fd3e5081d.png" alt="1" class="img_ev3q"></p>
+</li>
+<li>
+<p>Type command <code>sudo PE1100N-config</code>, if it asks for a password, enter <strong>the password set by yourself</strong>. Press Enter.
+<img decoding="async" loading="lazy" src="https://user-images.githubusercontent.com/97945168/231973109-07604154-afd0-4eec-a3b4-5911db6d80b8.png" alt="2" class="img_ev3q"></p>
+</li>
+<li>
+<p>Select <strong>Ok</strong>
+<img decoding="async" loading="lazy" src="https://user-images.githubusercontent.com/97945168/231974129-d9dc0023-ea0f-46d9-bfc3-e6f7163c980a.png" alt="3" class="img_ev3q"></p>
+</li>
+<li>
+<p>Select <strong>5. SIM  Select SIM slot</strong> and press Enter
+<img decoding="async" loading="lazy" src="https://user-images.githubusercontent.com/97945168/231974269-996aab6c-c21b-4b26-9e58-705a6991ee57.png" alt="4" class="img_ev3q"></p>
+</li>
+<li>
+<p>Select <strong>1 SIM1</strong> or <strong>2 SIM2</strong> and press Enter
+<img decoding="async" loading="lazy" src="https://user-images.githubusercontent.com/97945168/231974459-705e5ca4-6797-40b7-8c2d-022ef16e8bfd.png" alt="5" class="img_ev3q"></p>
+</li>
+<li>
+<p>Select <strong>Finish</strong> and press Enter
+<img decoding="async" loading="lazy" src="https://user-images.githubusercontent.com/97945168/231974758-1d0c422f-cb3d-4741-be44-b066ddb1af9f.png" alt="6" class="img_ev3q"></p>
+</li>
+<li>
+<p>Select <strong>Yes</strong> and press Enter to reboot
+<img decoding="async" loading="lazy" src="https://user-images.githubusercontent.com/97945168/231975016-df390260-279b-47e1-942d-d0d418970d74.png" alt="7" class="img_ev3q"></p>
+</li>
+</ol>
+<p> </p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="63-how-to-check-sim-card-status">6.3 How to check SIM card status<a href="#63-how-to-check-sim-card-status" class="hash-link" aria-label="Direct link to 6.3 How to check SIM card status" title="Direct link to 6.3 How to check SIM card status">​</a></h3>
+<ol>
+<li>
+<p>Open <strong>Terminal</strong> on the desktop
+<img decoding="async" loading="lazy" src="https://user-images.githubusercontent.com/97945168/231976246-fc33ae07-2afa-4de0-ba26-04dd5853bf50.png" alt="1" class="img_ev3q"></p>
+</li>
+<li>
+<p>Type command ‘<code>sudo PE1100N-config</code>’, if it asks for a password, enter <strong>the password set by yourself</strong>. Press Enter.
+<img decoding="async" loading="lazy" src="https://user-images.githubusercontent.com/97945168/231976517-6e4a1891-d60f-46e7-8b56-00e726354a56.png" alt="2" class="img_ev3q"></p>
+</li>
+<li>
+<p>Select <strong>Ok</strong>
+<img decoding="async" loading="lazy" src="https://user-images.githubusercontent.com/97945168/231976656-41e2ff55-72ba-4d02-b017-2cef8b4de39c.png" alt="3" class="img_ev3q"></p>
+</li>
+<li>
+<p>Select <strong>7. Configuration</strong> and press Enter
+<img decoding="async" loading="lazy" src="https://user-images.githubusercontent.com/97945168/231976817-0439c251-038e-41c3-ac7a-2638db2743a6.png" alt="4" class="img_ev3q"></p>
+</li>
+<li>
+<p>Check <strong>SIM slot</strong> and <strong>SIM state</strong> on the screen
+<img decoding="async" loading="lazy" src="https://user-images.githubusercontent.com/97945168/231976999-69e6e0ff-740c-4ceb-8af4-067c97b437f4.png" alt="5" class="img_ev3q"></p>
+</li>
+</ol>
+<p> </p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="7-switching-m2-com-mode-and-sim">7. Switching M.2, COM Mode, and SIM<a href="#7-switching-m2-com-mode-and-sim" class="hash-link" aria-label="Direct link to 7. Switching M.2, COM Mode, and SIM" title="Direct link to 7. Switching M.2, COM Mode, and SIM">​</a></h2>
+<ol>
+<li>Open Terminal on the desktop</li>
+<li>Type command <code>sudo PE1100N-config</code>, if it asks for a password, enter the password set by yourself. Press Enter.</li>
+</ol>
+<img width="669" height="371" alt="Screenshot from 2025-07-23 14-29-00" src="https://github.com/user-attachments/assets/4076fdd4-5e67-46ec-9054-c4023e7f9f31">
+<ol start="3">
+<li>Select Ok</li>
+</ol>
+<img width="1182" height="569" alt="Screenshot from 2025-07-23 14-29-46" src="https://github.com/user-attachments/assets/03fa59f9-c293-45d4-a52d-ce4828cfb1d9">
+<ol start="4">
+<li>Select the M.2, COM Mode, and SIM you want to switch</li>
+</ol>
+<img width="1182" height="569" alt="Screenshot from 2025-07-23 14-31-55" src="https://github.com/user-attachments/assets/0fc6fd35-9707-4179-9292-2e304c672904">
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="8-switch-dio-instructions">8. Switch DIO Instructions<a href="#8-switch-dio-instructions" class="hash-link" aria-label="Direct link to 8. Switch DIO Instructions" title="Direct link to 8. Switch DIO Instructions">​</a></h2>
+<ol>
+<li>Open Terminal on the desktop</li>
+<li>Type below command to switch DIO</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Set one DO Value: sudo dio_out #DO_Num # Value</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Get one DI Value: sudo dio_in #DO_Num</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Get all DO Value: sudo dio_out</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Get all DI Value: sudo dio_in</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="9-led-functions">9. LED Functions<a href="#9-led-functions" class="hash-link" aria-label="Direct link to 9. LED Functions" title="Direct link to 9. LED Functions">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="91-turn-onoff-led">9.1 Turn on/off LED<a href="#91-turn-onoff-led" class="hash-link" aria-label="Direct link to 9.1 Turn on/off LED" title="Direct link to 9.1 Turn on/off LED">​</a></h3>
+<ol>
+<li>Open Terminal on the desktop</li>
+<li>Below command are examples to turn on LED (Type Echo 1 or 0 for turning on/off LED)</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">ETH0 : sudo echo 1 &gt; /sys/class/leds/eth0-led/brightness</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">ETH1: sudo echo 1 &gt; /sys/class/leds/eth1-led/brightness</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">UART0: sudo echo 1 &gt; /sys/class/leds/uart0-led/brightness</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">UART1: sudo echo 1 &gt; /sys/class/leds/uart1-led/brightness</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">CAN: sudo echo 1 &gt; /sys/class/leds/can-led/brightness</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">WIFI: sudo echo 1 &gt; &quot;/sys/class/leds/wifi-led/brightness</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">LTE: sudo echo 1 &gt; /sys/class/leds/lte-led/brightness</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="92-disable-kernel-led-function">9.2 Disable kernel LED function<a href="#92-disable-kernel-led-function" class="hash-link" aria-label="Direct link to 9.2 Disable kernel LED function" title="Direct link to 9.2 Disable kernel LED function">​</a></h3>
+<ol>
+<li>Open Terminal on the desktop</li>
+<li>Type below commands to disable kernel LED function</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">ETH0: sudo echo none &gt; /sys/class/leds/eth0-led/trigger</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">ETH1: sudo echo none &gt; /sys/class/leds/eth1-led/trigger</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">UART0: sudo echo none &gt; /sys/class/leds/uart0-led/trigger</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">UART1: sudo echo none &gt; /sys/class/leds/uart1-led/trigger</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">CAN: sudo echo none &gt; /sys/class/leds/can-led/trigger</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">WIFI: sudo echo none &gt; /sys/class/leds/wifi-led/trigger</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">LTE: sudo echo none &gt; /sys/class/leds/lte-led/trigger</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="93-recover-kernel-led-function">9.3 Recover Kernel LED function<a href="#93-recover-kernel-led-function" class="hash-link" aria-label="Direct link to 9.3 Recover Kernel LED function" title="Direct link to 9.3 Recover Kernel LED function">​</a></h3>
+<ol>
+<li>Open Terminal on the desktop</li>
+<li>Type below commands to recover kernel LED function</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">ETH0: sudo echo eth0 &gt; /sys/class/leds/eth0-led/trigger</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">ETH1: sudo echo eth1 &gt; /sys/class/leds/eth1-led/trigger</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">UART0: sudo echo uart0 &gt; /sys/class/leds/uart0-led/trigger</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">UART1: : sudo echo uart1 &gt; /sys/class/leds/uart1-led/trigger</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">CAN: sudo echo can &gt; /sys/class/leds/can-led/trigger</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">WIFI: sudo echo wifi &gt; /sys/class/leds/wifi-led/trigger</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">LTE: sudo echo lte &gt; /sys/class/leds/lte-led/trigger</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="10-others">10. Others<a href="#10-others" class="hash-link" aria-label="Direct link to 10. Others" title="Direct link to 10. Others">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="101-asus-api">10.1 ASUS API<a href="#101-asus-api" class="hash-link" aria-label="Direct link to 10.1 ASUS API" title="Direct link to 10.1 ASUS API">​</a></h3>
+<p><a href="https://github.com/ASUS-IPC/ASUS-IPC/files/14754133/Asus_API_Programming_Guide_v1.05_20240223.pdf" target="_blank" rel="noopener noreferrer">Asus_API_Programming_Guide_v1.05_20240223.pdf</a></p>
+<p><a href="https://github.com/ASUS-IPC/ASUS-IPC/files/14754156/asusapi_1.0.5-2_aarch64-linux-gnu.zip" target="_blank" rel="noopener noreferrer">ASUS API (Library, Header files, Sample code)</a></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="102-get-console-log">10.2 Get Console Log<a href="#102-get-console-log" class="hash-link" aria-label="Direct link to 10.2 Get Console Log" title="Direct link to 10.2 Get Console Log">​</a></h3>
+<p><strong>For PE1100N Box, the Console Port is the red box.</strong></p>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/005e69fb-1e0b-4027-a71c-5f84d33280ad" alt="console port" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="1021-host-pc--windows">10.2.1 Host PC : Windows<a href="#1021-host-pc--windows" class="hash-link" aria-label="Direct link to 10.2.1 Host PC : Windows" title="Direct link to 10.2.1 Host PC : Windows">​</a></h4>
+<ol>
+<li>
+<p>Connect PE1100N console port to a PC with Micro USB cable.</p>
+<p>Open Device Manager on PC, <strong>USB TO UART BRIDGE</strong> may appear in Device Manager.</p>
+</li>
+</ol>
+<img width="268" alt="pe1100n_otherdevices_2" src="https://github.com/user-attachments/assets/32b72e4e-14eb-4846-aae3-766094638177">
+<ol start="2">
+<li>In this case, you need to download the driver (F81232_231115_whql.zip) and update it.</li>
+</ol>
+<p><a href="https://github.com/ASUS-IPC/ASUS-IPC/files/15477566/F81232_231115_whql.zip" target="_blank" rel="noopener noreferrer">F81232_231115_whql.zip</a></p>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/483e9151-d669-41cb-9c7b-be45f180a052" alt="update driver" class="img_ev3q"></p>
+<ol start="3">
+<li>Install and open the PuTTY, select <strong>Serial</strong> and input the COM* and Speed is <strong>115200</strong>.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/ba5bbfb8-a38e-42e4-888f-d66efddec9c9" alt="setting" class="img_ev3q"></p>
+<ol start="4">
+<li>Click the Open button on PuTTY and power on the PE1100N, and some boot logs will printed on PuTTY from PC.</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="1022-host-pc--ubuntu">10.2.2 Host PC : Ubuntu<a href="#1022-host-pc--ubuntu" class="hash-link" aria-label="Direct link to 10.2.2 Host PC : Ubuntu" title="Direct link to 10.2.2 Host PC : Ubuntu">​</a></h4>
+<ol>
+<li>Install minicom on Linux PC</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sudo apt update</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo apt install minicom</span><br></span></code></pre></div></div>
+<ol start="2">
+<li>
+<p>Connect Micro USB cable to the console port on PE1100N</p>
+</li>
+<li>
+<p>Check if /dev/ttyUSB0 exists</p>
+</li>
+<li>
+<p>Execute the script to capture logs <a href="https://github.com/user-attachments/files/21115587/log_uart.zip" target="_blank" rel="noopener noreferrer">log_uart.zip</a></p>
+</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sudo ./log_uart.sh</span><br></span></code></pre></div></div>
+<blockquote>
+<p>If you want to exit minicom, press Ctrl+A, then press X.</p>
+</blockquote>
+<ol start="5">
+<li>The log will be generated in the uart_logs folder.</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="11-demo--intelligent-video-analytics">11. Demo : Intelligent Video Analytics<a href="#11-demo--intelligent-video-analytics" class="hash-link" aria-label="Direct link to 11. Demo : Intelligent Video Analytics" title="Direct link to 11. Demo : Intelligent Video Analytics">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="111-metropolis-microservices-for-jetson">11.1 Metropolis Microservices for Jetson<a href="#111-metropolis-microservices-for-jetson" class="hash-link" aria-label="Direct link to 11.1 Metropolis Microservices for Jetson" title="Direct link to 11.1 Metropolis Microservices for Jetson">​</a></h3>
+<p>NVIDIA Metropolis Microservices is a collection of software components designed for building intelligent video analytics applications. It&#x27;s part of NVIDIA Metropolis, which is a platform aimed at transforming cities, enterprises, and industries into smart environments using computer vision, deep learning, and AI.</p>
+<p>Prerequisites</p>
+<ul>
+<li>Jetson Orin devices with JetPack 6.0 OS</li>
+<li>Android phone or tablet</li>
+</ul>
+<ol>
+<li>Install Docker</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sudo apt install -y docker.io</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo usermod -aG docker $USER</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">newgrp docker</span><br></span></code></pre></div></div>
+<ol start="2">
+<li>Install nvidia-jetson-services</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sudo apt update</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo apt install -y nvidia-jetson-services</span><br></span></code></pre></div></div>
+<ol start="3">
+<li>Launch the Redis, Ingress and VST services</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sudo systemctl start jetson-redis</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo systemctl start jetson-ingress</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo systemctl start jetson-vst</span><br></span></code></pre></div></div>
+<ol start="4">
+<li>Download Jetson Platform Services Reference Workflow &amp; Resources</li>
+</ol>
+<p>Follow the link below, and select on <strong>Version History</strong> tab<br>
+<!-- -->Choose  1.1.0 -&gt; Download<br>
+<a href="https://catalog.ngc.nvidia.com/orgs/nvidia/teams/jps/resources/reference-workflow-and-resources" target="_blank" rel="noopener noreferrer">https://catalog.ngc.nvidia.com/orgs/nvidia/teams/jps/resources/reference-workflow-and-resources</a>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/c2370654-5522-4b67-81d8-d60f65a592c5" alt="圖片1" class="img_ev3q">
+<strong>Note: 2.0.0 is for JetPack 6.1</strong></p>
+<ol start="5">
+<li>Launch NVStreamer</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">unzip files.zip</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">rm files.zip</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">cd files</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">tar -xvf nvstreamer-1.1.0.tar.gz</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">cd nvstreamer</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo docker compose -f compose_nvstreamer.yaml up -d --force-recreate</span><br></span></code></pre></div></div>
+<ol start="6">
+<li>Launch AI_NVR</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">cd &lt;path of files&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">tar -xvf ai_nvr-1.1.0.tar.gz</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo cp ai_nvr/config/ai-nvr-nginx.conf /opt/nvidia/jetson/services/ingress/config/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">cd ai_nvr</span><br></span></code></pre></div></div>
+<p>For Orin AGX:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sudo docker compose -f compose_agx.yaml up -d --force-recreate</span><br></span></code></pre></div></div>
+<p>For Orin NX 16G:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sudo docker compose -f compose_nx16.yaml up -d --force-recreate</span><br></span></code></pre></div></div>
+<p>For Orin NX 8G:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sudo docker compose -f compose_nx8.yaml up -d --force-recreate</span><br></span></code></pre></div></div>
+<p>For Orin Nano 8G/4G:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sudo docker compose -f compose_nano.yaml up -d --force-recreate</span><br></span></code></pre></div></div>
+<p>Docker containers will be created after executing the above instructions.<br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/a5e10370-e99d-485e-8f24-5c05a230d9f8" alt="圖片2" class="img_ev3q"></p>
+<ol start="7">
+<li>Visit the NVStream Streamer Dashboard<br>
+<a href="http://localhost:31000/" target="_blank" rel="noopener noreferrer">http://localhost:31000/</a><br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/04f75362-871a-480f-9130-5faac38f315e" alt="圖片4" class="img_ev3q"></li>
+</ol>
+<p>Click &quot;File Upload&quot; and select sample_1080p_h264.mp4 from the files folder.<br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/fac86427-eb09-4507-9e47-fea94327e944" alt="圖片5" class="img_ev3q"></p>
+<p>The file should appear on the dashboard once it has been uploaded successfully<br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/02a59db4-8229-44dc-b992-a959ee2b65c1" alt="圖片6" class="img_ev3q"></p>
+<p>Ex: The RTSP URL is rtsp://192.168.1.46:31555/nvstream/root/store/nvstreamer_videos/sample_1080p_h264.mp4</p>
+<ol start="8">
+<li>Visit the VST Dashboard<br>
+<a href="http://localhost:30080/vst" target="_blank" rel="noopener noreferrer">http://localhost:30080/vst</a><br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/b785f885-fb80-47e0-99cf-b17152368de1" alt="圖片7" class="img_ev3q"></li>
+</ol>
+<p>Click “Sensor Management”, then add the device</p>
+<ol>
+<li>Enter the sample RTSP URL</li>
+<li>Enter the sample name</li>
+<li>Click submit<br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/b9692ff9-05bf-4273-8929-a8d923145f8c" alt="圖片8" class="img_ev3q"></li>
+</ol>
+<p>The sample video should be listed on the VST Dashboard.<br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/7caa821d-f4e0-4119-aa39-60b7f444ba8a" alt="圖片9" class="img_ev3q"></p>
+<ol start="9">
+<li>
+<p>Example for Metropolis analytics<br>
+<!-- -->A. Go to <a href="http://localhost:30080/vst" target="_blank" rel="noopener noreferrer">http://localhost:30080/vst</a><br>
+<!-- -->B. Click Live Streams.<br>
+<!-- -->C. Select the sample VST.<br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/217dc662-cee8-41de-9267-47ef8ba7e17b" alt="圖片10" class="img_ev3q"><br>
+<!-- -->D. Expand Analytics.<br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/4b14c9d3-1a21-488f-989e-2d2bbb167a3f" alt="圖片11" class="img_ev3q"><br>
+<!-- -->E. Click “ROI”.<br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/b0258b56-d198-4404-8348-b65d8834cc6b" alt="圖片12" class="img_ev3q"><br>
+<!-- -->F. Add areas of interest, then click “Done”<br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/4f81fdbe-2c2a-4512-8689-5ee358585085" alt="圖片13" class="img_ev3q"><br>
+<!-- -->G. Enter “People” on the dialog, then click Submit<br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/7fd34c23-e56d-4e7a-b471-17d65dfd9563" alt="圖片14" class="img_ev3q"><br>
+<!-- -->H. Select People on “Select ROIs”<br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/adc0ba07-1b51-4b29-ab8a-87f4086252aa" alt="圖片15" class="img_ev3q"><br>
+<!-- -->I. Click “Show”<br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/997ebfd5-c710-44e9-be9d-b7b2307ea6b4" alt="圖片16" class="img_ev3q"><br>
+<!-- -->J. Detected people will be displayed on the video screen.<br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/21a17e97-a34d-4921-b34c-78b1ce0260fe" alt="圖片17" class="img_ev3q"></p>
+</li>
+<li>
+<p>Download and install NVIDIA Jetson Services on Android phone or tablet</p>
+</li>
+</ol>
+<p>Follow the link below, and there is an Android app that allows you to track events and create areas of interest to monitor<br>
+<!-- -->you can find it on Google Play as AI NVR.<br>
+<a href="https://play.google.com/store/apps/details?id=com.nvidia.ainvr" target="_blank" rel="noopener noreferrer">https://play.google.com/store/apps/details?id=com.nvidia.ainvr</a><br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/9d237ad5-7bb0-4331-93ab-0c81e6c91155" alt="圖片18" class="img_ev3q"></p>
+<p>For <strong>JetPack 6.0</strong>, please download and install this version manually instead of the Play Store.<br>
+<a href="https://apkpure.com/cn/jetson-platform-services/com.nvidia.ainvr/downloading/1.0.2024060601" target="_blank" rel="noopener noreferrer">https://apkpure.com/cn/jetson-platform-services/com.nvidia.ainvr/downloading/1.0.2024060601</a></p>
+<ol start="11">
+<li>Execute NVIDIA Jetson Services on Android device</li>
+</ol>
+<p>A. Enter the JETSON_IP address, then press “Submit”<br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/5b709ff9-c1aa-4b39-a29d-97155b0ed168" alt="圖片19" class="img_ev3q"></p>
+<p>B. Press “Analytics”<br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/298c8dde-08e6-4c36-9bfa-5eef1f49f662" alt="圖片20" class="img_ev3q"></p>
+<p>C. This App allows you to track events and create areas of interest to monitor<br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/74bb4ed9-d5b5-490f-a7e4-2f4b93a70638" alt="圖片21" class="img_ev3q"></p>
+<p>Reference:</p>
+<ol>
+<li>Tutorial mmj<br>
+<a href="https://www.jetson-ai-lab.com/tutorial_mmj.html" target="_blank" rel="noopener noreferrer">https://www.jetson-ai-lab.com/tutorial_mmj.html</a></li>
+<li>NVIDIA Metropolis Microservices<br>
+<a href="https://developer.nvidia.com/metropolis-microservices" target="_blank" rel="noopener noreferrer">https://developer.nvidia.com/metropolis-microservices</a></li>
+<li>Overview of AI-NVR<br>
+<a href="https://www.nvidia.com/zh-tw/on-demand/session/other2024-mmj2/" target="_blank" rel="noopener noreferrer">https://www.nvidia.com/zh-tw/on-demand/session/other2024-mmj2/</a></li>
+</ol>
+<p> </p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="112-running-deepstream-python-samples">11.2 Running DeepStream Python samples<a href="#112-running-deepstream-python-samples" class="hash-link" aria-label="Direct link to 11.2 Running DeepStream Python samples" title="Direct link to 11.2 Running DeepStream Python samples">​</a></h3>
+<ol>
+<li>Flash images for Jetpack 6.0</li>
+</ol>
+<p>Please follow the link below to flash the devices based on your models</p>
+<p>For Orin NX 16G:<br>
+<a href="https://dlcdnets.asus.com/pub/ASUS/mb/Embedded_IPC/PE1100N/PE1100N_JONXS_Orin-NX-16GB_JetPack-ssd-6.0.0_L4T-36.3.0_v2.0.6-official-20240904.tar.gz?model=PE1100N" target="_blank" rel="noopener noreferrer">https://dlcdnets.asus.com/pub/ASUS/mb/Embedded_IPC/PE1100N/PE1100N_JONXS_Orin-NX-16GB_JetPack-ssd-6.0.0_L4T-36.3.0_v2.0.6-official-20240904.tar.gz?model=PE1100N</a></p>
+<p>For Orin NX 8G:<br>
+<a href="https://dlcdnets.asus.com/pub/ASUS/mb/Embedded_IPC/PE1100N/PE1100N_JONXS_Orin-NX-8GB_JetPack-ssd-6.0.0_L4T-36.3.0_v2.0.6-official-20240904.tar.gz?model=PE1100N" target="_blank" rel="noopener noreferrer">https://dlcdnets.asus.com/pub/ASUS/mb/Embedded_IPC/PE1100N/PE1100N_JONXS_Orin-NX-8GB_JetPack-ssd-6.0.0_L4T-36.3.0_v2.0.6-official-20240904.tar.gz?model=PE1100N</a></p>
+<p>For Orin Nano 8G:<br>
+<a href="https://dlcdnets.asus.com/pub/ASUS/mb/Embedded_IPC/PE1100N/PE1100N_JONAS_Orin-Nano-8GB_JetPack-ssd-6.0.0_L4T-36.3.0_v2.0.6-official-20240904.tar.gz?model=PE1100N" target="_blank" rel="noopener noreferrer">https://dlcdnets.asus.com/pub/ASUS/mb/Embedded_IPC/PE1100N/PE1100N_JONAS_Orin-Nano-8GB_JetPack-ssd-6.0.0_L4T-36.3.0_v2.0.6-official-20240904.tar.gz?model=PE1100N</a></p>
+<p>For Orin Nano 4G:<br>
+<a href="https://dlcdnets.asus.com/pub/ASUS/mb/Embedded_IPC/PE1100N/PE1100N_JONAS_Orin-Nano-4GB_JetPack-ssd-6.0.0_L4T-36.3.0_v2.0.6-official-20240905.tar.gz?model=PE1100N" target="_blank" rel="noopener noreferrer">https://dlcdnets.asus.com/pub/ASUS/mb/Embedded_IPC/PE1100N/PE1100N_JONAS_Orin-Nano-4GB_JetPack-ssd-6.0.0_L4T-36.3.0_v2.0.6-official-20240905.tar.gz?model=PE1100N</a></p>
+<ol start="2">
+<li>Install Jetson Stats and use jtop to monitor the system</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sudo apt-get update</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo apt-get install python3-pip</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo pip3 install -U jetson-stats</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo reboot</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">jtop</span><br></span></code></pre></div></div>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/3f88961e-4900-4b09-bbe7-ee35507e10ea" alt="圖片1" class="img_ev3q"></p>
+<p><strong>For more details, please follow the link below from NVIDIA developer website.</strong><br>
+<a href="https://developer.nvidia.com/embedded/community/jetson-projects/jetson_stats" target="_blank" rel="noopener noreferrer">https://developer.nvidia.com/embedded/community/jetson-projects/jetson_stats</a></p>
+<ol start="2">
+<li>
+<p>Upgrade the compute stack to JetPack 6.1<br>
+<!-- -->Please follow the link below to upgrade your device to Jetpack 6.1. If a release based on JetPack 6.1 is used, you can skip this.<br>
+<a href="https://github.com/ASUS-IPC/ASUS-IPC/wiki/PE1100N#66-upgrade-to-jetpack-61" target="_blank" rel="noopener noreferrer">https://github.com/ASUS-IPC/ASUS-IPC/wiki/PE1100N#66-upgrade-to-jetpack-61</a></p>
+</li>
+<li>
+<p>Meet the prerequisites for the DeepStream SDK</p>
+</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sudo pip3 install meson</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo pip3 install ninja</span><br></span></code></pre></div></div>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">cd ~/Documents/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git clone https://github.com/GNOME/glib.git</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">cd glib</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git checkout 2.76.6</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">meson build --prefix=/usr</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">ninja -C build/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">cd build/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo ninja install</span><br></span></code></pre></div></div>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">pkg-config --modversion glib-2.0</span><br></span></code></pre></div></div>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sudo apt install \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">libssl3 \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">libssl-dev \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">libgstreamer1.0-0 \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">gstreamer1.0-tools \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">gstreamer1.0-plugins-good \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">gstreamer1.0-plugins-bad \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">gstreamer1.0-plugins-ugly \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">gstreamer1.0-libav \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">libgstreamer-plugins-base1.0-dev \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">libgstrtspserver-1.0-0 \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">libjansson4 \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">libyaml-cpp-dev</span><br></span></code></pre></div></div>
+<p><strong>For more details, please follow the link below from NVIDIA official website.</strong><br>
+<a href="https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_Installation.html#prerequisites" target="_blank" rel="noopener noreferrer">https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_Installation.html#prerequisites</a></p>
+<ol start="4">
+<li>Install the DeepStream SDK</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">cd ~/Documents/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">wget --content-disposition &#x27;https://api.ngc.nvidia.com/v2/resources/nvidia/deepstream/versions/7.1/files/deepstream-7.1_7.1.0-1_arm64.deb&#x27; -O deepstream-7.1_7.1.0-1_arm64.deb</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo apt-get install ./deepstream-7.1_7.1.0-1_arm64.deb</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">wget --content-disposition &#x27;https://github.com/NVIDIA-AI-IOT/deepstream_python_apps/releases/download/v1.2.0/pyds-1.2.0-cp310-cp310-linux_aarch64.whl&#x27; -O pyds-1.2.0-cp310-cp310-linux_aarch64.whl</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo pip3 install pyds-1.2.0-cp310-cp310-linux_aarch64.whl</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo pip3 install cuda-python</span><br></span></code></pre></div></div>
+<p><strong>Please follow the links below for more information</strong><br>
+<a href="https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_Installation.html#install-the-deepstream-sdk" target="_blank" rel="noopener noreferrer">https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_Installation.html#install-the-deepstream-sdk</a><br>
+<a href="https://github.com/NVIDIA-AI-IOT/deepstream_python_apps/releases" target="_blank" rel="noopener noreferrer">https://github.com/NVIDIA-AI-IOT/deepstream_python_apps/releases</a><br>
+<a href="https://github.com/NVIDIA-AI-IOT/deepstream_python_apps/tree/master/bindings" target="_blank" rel="noopener noreferrer">https://github.com/NVIDIA-AI-IOT/deepstream_python_apps/tree/master/bindings</a></p>
+<ol start="5">
+<li>Download the DeepStream Python samples</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">cd /opt/nvidia/deepstream/deepstream/sources/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo git clone https://github.com/NVIDIA-AI-IOT/deepstream_python_apps.git</span><br></span></code></pre></div></div>
+<p><strong>Please follow the links below for more information</strong><br>
+<a href="https://github.com/NVIDIA-AI-IOT/deepstream_python_apps" target="_blank" rel="noopener noreferrer">https://github.com/NVIDIA-AI-IOT/deepstream_python_apps</a></p>
+<ol start="6">
+<li>Run the samples of the deepstream<br>
+<!-- -->Before runing the samples, please run the following commads to boost the clocks</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sudo nvpmodel -m 0</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo jetson_clocks</span><br></span></code></pre></div></div>
+<p><strong>For more information, please refer to the following URL.</strong><br>
+<a href="https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_Quickstart.html#boost-the-clocks" target="_blank" rel="noopener noreferrer">https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_Quickstart.html#boost-the-clocks</a></p>
+<ul>
+<li><strong>Run the sample deepstream-test2</strong><br>
+<!-- -->This is a sample with 4-class object detection, tracking and attribute classification pipeline.</li>
+</ul>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">cd /opt/nvidia/deepstream/deepstream/sources/deepstream_python_apps/apps/deepstream-test2/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">python3 deepstream_test_2.py /opt/nvidia/deepstream/deepstream/samples/streams/sample_720p.h264</span><br></span></code></pre></div></div>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/dc51d858-7ec1-4042-9b9d-f33319236487" alt="圖片1" class="img_ev3q"><br>
+<strong>For more information, please refer to the following URL.</strong></p>
+<p><a href="https://github.com/NVIDIA-AI-IOT/deepstream_python_apps/tree/master/apps/deepstream-test2" target="_blank" rel="noopener noreferrer">https://github.com/NVIDIA-AI-IOT/deepstream_python_apps/tree/master/apps/deepstream-test2</a></p>
+<ul>
+<li><strong>Run the sample deepstream-test3 with single file input</strong><br>
+<!-- -->This is a sample with multi-stream pipeline performing 4-class object detection and also supports triton inference server, no-display mode, file-loop and silent mode.</li>
+</ul>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">cd /opt/nvidia/deepstream/deepstream/sources/deepstream_python_apps/apps/deepstream-test3/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo python3 deepstream_test_3.py -i file:///opt/nvidia/deepstream/deepstream/samples/streams/sample_1080p_h264.mp4 -s --file-loop</span><br></span></code></pre></div></div>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/30a2b6d7-d30c-42da-8136-0a7445dbc502" alt="圖片2" class="img_ev3q"></p>
+<ul>
+<li><strong>Run the sample deepstream-test3 with 4 file inputs</strong></li>
+</ul>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">cd /opt/nvidia/deepstream/deepstream/sources/deepstream_python_apps/apps/deepstream-test3/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo python3 deepstream_test_3.py -i file:///opt/nvidia/deepstream/deepstream/samples/streams/sample_1080p_h264.mp4 file:///opt/nvidia/deepstream/deepstream/samples/streams/sample_1080p_h264.mp4 file:///opt/nvidia/deepstream/deepstream/samples/streams/sample_1080p_h264.mp4 file:///opt/nvidia/deepstream/deepstream/samples/streams/sample_1080p_h264.mp4 -s --file-loop</span><br></span></code></pre></div></div>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/6977803b-9264-46ee-bc13-7e4e6447461f" alt="圖片3" class="img_ev3q"></p>
+<p><strong>For more information, please refer to the following URL.</strong><br>
+<a href="https://github.com/NVIDIA-AI-IOT/deepstream_python_apps/tree/master/apps/deepstream-test3" target="_blank" rel="noopener noreferrer">https://github.com/NVIDIA-AI-IOT/deepstream_python_apps/tree/master/apps/deepstream-test3</a></p>
+<p> </p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="113-visual-language-models-vlm-for-jetson">11.3 Visual Language Models (VLM) for Jetson<a href="#113-visual-language-models-vlm-for-jetson" class="hash-link" aria-label="Direct link to 11.3 Visual Language Models (VLM) for Jetson" title="Direct link to 11.3 Visual Language Models (VLM) for Jetson">​</a></h3>
+<p>VLMs are multi modal models supporting images, video and text and using a combination of large language models and vision transformers. Based on this capability, they are able to support text prompts to query videos and images thereby enabling capabilities such as chatting with the video, and defining natural language based alerts.</p>
+<p>Prerequisites</p>
+<ul>
+<li>Jetson Orin devices with JetPack 6.0 OS</li>
+<li>Android phone or tablet</li>
+</ul>
+<ol>
+<li>Install Docker</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sudo apt install -y docker.io</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo usermod -aG docker $USER</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">newgrp docker</span><br></span></code></pre></div></div>
+<ol start="2">
+<li>Install nvidia-jetson-services</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sudo apt update</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo apt install -y nvidia-jetson-services</span><br></span></code></pre></div></div>
+<ol start="3">
+<li>Launch the VST services</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sudo systemctl start jetson-vst</span><br></span></code></pre></div></div>
+<ol start="4">
+<li>Download Jetson Platform Services Reference Workflow &amp; Resources</li>
+</ol>
+<p>Follow the link below, and select on <strong>Version History</strong> tab<br>
+<!-- -->Choose  1.1.0 -&gt; Download<br>
+<a href="https://catalog.ngc.nvidia.com/orgs/nvidia/teams/jps/resources/reference-workflow-and-resources" target="_blank" rel="noopener noreferrer">https://catalog.ngc.nvidia.com/orgs/nvidia/teams/jps/resources/reference-workflow-and-resources</a>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/c2370654-5522-4b67-81d8-d60f65a592c5" alt="圖片1" class="img_ev3q">
+<strong>Note: 2.0.0 is for JetPack 6.1</strong></p>
+<ol start="5">
+<li>Launch NVStreamer</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">unzip files.zip</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">rm files.zip</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">cd files</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">tar -xvf nvstreamer-1.1.0.tar.gz</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">cd nvstreamer</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo docker compose -f compose_nvstreamer.yaml up -d --force-recreate</span><br></span></code></pre></div></div>
+<ol start="6">
+<li>Visit the NVStream Streamer Dashboard<br>
+<a href="http://localhost:31000/" target="_blank" rel="noopener noreferrer">http://localhost:31000/</a><br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/04f75362-871a-480f-9130-5faac38f315e" alt="圖片4" class="img_ev3q"></li>
+</ol>
+<p>Click &quot;File Upload&quot; and select sample_1080p_h264.mp4 from the files folder.<br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/fac86427-eb09-4507-9e47-fea94327e944" alt="圖片5" class="img_ev3q"></p>
+<p>The file should appear on the dashboard once it has been uploaded successfully<br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/02a59db4-8229-44dc-b992-a959ee2b65c1" alt="圖片6" class="img_ev3q"><br>
+<!-- -->Ex: The RTSP URL is rtsp://192.168.1.46:31555/nvstream/root/store/nvstreamer_videos/sample_1080p_h264.mp4</p>
+<ol start="7">
+<li>Visit the VST Dashboard<br>
+<a href="http://localhost:30080/vst" target="_blank" rel="noopener noreferrer">http://localhost:30080/vst</a><br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/b785f885-fb80-47e0-99cf-b17152368de1" alt="圖片7" class="img_ev3q"></li>
+</ol>
+<p>Click “Sensor Management”, then add the device</p>
+<ol>
+<li>Enter the sample RTSP URL</li>
+<li>Enter the sample name</li>
+<li>Click submit<br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/b9692ff9-05bf-4273-8929-a8d923145f8c" alt="圖片8" class="img_ev3q"></li>
+</ol>
+<p>The sample video should be listed on the VST Dashboard.<br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/7caa821d-f4e0-4119-aa39-60b7f444ba8a" alt="圖片9" class="img_ev3q"></p>
+<ol start="8">
+<li>Launch VLM</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">cd &lt;path of files&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">tar -xvf vlm-1.1.0.tar.gz</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">cd vlm/example_1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo cp config/vlm-nginx.conf /opt/nvidia/jetson/services/ingress/config</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo cp config/prometheus.yml /opt/nvidia/jetson/services/monitoring/config/prometheus.yml</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo cp config/rules.yml /opt/nvidia/jetson/services/monitoring/config/rules.yml</span><br></span></code></pre></div></div>
+<p>Start the foundation services and launch it.</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sudo systemctl start jetson-ingress</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo systemctl start jetson-monitoring</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo systemctl start jetson-sys-monitoring</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo systemctl start jetson-gpu-monitoring</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo docker compose up -d</span><br></span></code></pre></div></div>
+<p>The first time the VLM service is launched, it will automatically download and quantize the VLM. This will take some time.<br>
+<!-- -->You can visit the page http://JETSON_IP:5015/v1/health, If the VLM is ready it will return (“detail”:”ready”). If you are launching the VLM for the first time it will take some time to fully load.<br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/ecd3af77-2778-46af-b93c-a3ba5d771205" alt="1" class="img_ev3q"><br>
+<strong>Important</strong> If it shows (“detail”:”model loading”), it means it is not ready yet.<br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/da890011-0583-4738-a6cc-afd4eb1a6f48" alt="2" class="img_ev3q"></p>
+<ol start="9">
+<li>Interact with VLM Service<br>
+<!-- -->A. Control Stream Input via REST APIs<br>
+<!-- -->You can start by adding an RTSP stream for the VLM to use with the following curl command. This will use the POST method on the live-stream endpoint. Currently the VLM will only support 1 stream but in the future this API will allow for multi-stream support.</li>
+</ol>
+<p>Replace 192.168.100.45 with your Jetson IP and replace the RTSP link with your RTSP link.</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">curl --location &#x27;http://192.168.100.45:5010/api/v1/live-stream&#x27; \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">--header &#x27;Content-Type: application/json&#x27; \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">--data &#x27;{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">&quot;liveStreamUrl&quot;:&quot;rtsp://192.168.100.45:31554/nvstream/root/store/nvstreamer_videos/sample_1080p_h264.mp4&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}&#x27;</span><br></span></code></pre></div></div>
+<p>This request will return a unique stream ID that is used later to set alerts and ask follow up questions and remove the stream.
+Ex: &quot;id&quot;: &quot;f16ffb43-95a4-44c5-bc5f-00cad33ddaf2&quot;<br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/44d5f78f-d887-4494-83e1-f89edfe6fd2a" alt="3" class="img_ev3q"></p>
+<p>B. Set Alerts<br>
+<!-- -->Alerts are questions that the VLM will continuously evaluate on the live stream input. For each alert rule set, the VLM will try to decide if it is True or False based on the most recent frame from of the live stream. These True and False states as determined by the VLM, are sent to a websocket and the jetson monitoring service.</p>
+<p>When setting alerts, the alert rule should be phrased as a yes/no question. Such as “Is there people?”. The body of the request must also have the “id” field that corresponds to the stream ID that was returned when the RTSP stream was added.</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">curl --location &#x27;http://192.168.100.45:5010/api/v1/alerts&#x27; \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">--header &#x27;Content-Type: application/json&#x27; \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">--data &#x27;{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &quot;alerts&quot;: [&quot;is there people?&quot;],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &quot;id&quot;: &quot;f16ffb43-95a4-44c5-bc5f-00cad33ddaf2&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}&#x27;</span><br></span></code></pre></div></div>
+<p>C. View RTSP Stream Output<br>
+<!-- -->Once a stream is added, it will be passed through to the output RTSP stream. You can view this stream at &quot;rtsp://JETSON_IP:5011/out&quot;. Once a query or alert is added, we can view the VLM responses on this output stream.<br>
+<!-- -->Ex: You can view this RTSP stream by VLC<br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/3a0774b7-fccc-4ec3-87ca-69b8b977a3fa" alt="4" class="img_ev3q"></p>
+<p>D. Delete the stream<br>
+<!-- -->To shut down the example you can first remove the stream using a DELETE method on the live-stream endpoint. Note the stream ID is added to the URL path for this.</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">curl --location --request DELETE &#x27;http://192.168.100.45:5010/api/v1/live-stream/f16ffb43-95a4-44c5-bc5f-00cad33ddaf2&#x27;</span><br></span></code></pre></div></div>
+<p>This request will return “Stream removed successfully”<br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/24d6a15b-953d-4543-9bf6-c5494159e231" alt="5" class="img_ev3q"></p>
+<ol start="10">
+<li>Using VLM Service from Android phone<br>
+<!-- -->A. Download and install NVIDIA Jetson Services on Android phone or tablet</li>
+</ol>
+<p>Follow the link below, and there is an Android app that allows you to track events and create areas of interest to monitor<br>
+<!-- -->you can find it on Google Play as AI NVR.<br>
+<a href="https://play.google.com/store/apps/details?id=com.nvidia.ainvr" target="_blank" rel="noopener noreferrer">https://play.google.com/store/apps/details?id=com.nvidia.ainvr</a><br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/9d237ad5-7bb0-4331-93ab-0c81e6c91155" alt="圖片18" class="img_ev3q"></p>
+<p>For <strong>JetPack 6.0</strong>, please download and install this version manually instead of the Play Store.<br>
+<a href="https://apkpure.com/cn/jetson-platform-services/com.nvidia.ainvr/downloading/1.0.2024060601" target="_blank" rel="noopener noreferrer">https://apkpure.com/cn/jetson-platform-services/com.nvidia.ainvr/downloading/1.0.2024060601</a></p>
+<p>B. Execute NVIDIA Jetson Services on Android device<br>
+<!-- -->Enter the JETSON_IP address, then press “Submit”<br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/5b709ff9-c1aa-4b39-a29d-97155b0ed168" alt="圖片19" class="img_ev3q"></p>
+<p>Press message button.<br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/69bf3ec9-b60c-4449-bc78-f67f5b1f74c8" alt="6" class="img_ev3q"></p>
+<p>Now you can talk to the VLM service. For example, ask VLM what he sees on the screen.<br>
+<img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/2c76a61f-cbdc-4c2a-bae2-a7de5f66d6c3" alt="7" class="img_ev3q"></p>
+<p><strong>Reference</strong><br>
+<!-- -->Visual Language Models (VLM) with Jetson Platform Services<br>
+<a href="https://docs.nvidia.com/jetson/jps/inference-services/vlm.html" target="_blank" rel="noopener noreferrer">https://docs.nvidia.com/jetson/jps/inference-services/vlm.html</a></p>
+<p> </p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="12-device-management---aicc">12. Device Management - AICC<a href="#12-device-management---aicc" class="hash-link" aria-label="Direct link to 12. Device Management - AICC" title="Direct link to 12. Device Management - AICC">​</a></h2>
+<p>With ASUS IoT Cloud Console (AICC), you can manage PE1100N with simple steps, know the device information, online status, modify profile settings and deploy applications remotely, any modifications can be synced in real time.</p>
+<p><strong>Feature</strong></p>
+<ul>
+<li>
+<p>Device Management</p>
+<p>View online/offline information. Monitor CPU, memory, storage and usage information. Power off or restart devices.</p>
+</li>
+<li>
+<p>APP Management</p>
+<p>Install or uninstall apps. Monitor app information.</p>
+</li>
+<li>
+<p>Sensor-data monitor</p>
+<p>Data acquisition, visualization and monitoring.</p>
+</li>
+<li>
+<p>Notifications</p>
+<p>The real-time detection and alarm system allows managers to know the status of devices at anytime and anywhere.</p>
+</li>
+<li>
+<p>Remote Command</p>
+<p>The Command feature enables administrators to manage devices remotely, including troubleshooting and information gathering.</p>
+</li>
+</ul>
+<p>More information <a href="https://iot.asus.com/solutions/asus-iot-cloud-console-aicc/" target="_blank" rel="noopener noreferrer">https://iot.asus.com/solutions/asus-iot-cloud-console-aicc/</a></p>
+<img width="553" height="314" alt="圖片9" src="https://github.com/user-attachments/assets/790c20b2-7802-40d1-9f9b-675823b1a7bb"></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/yichingTest/docs/category/nvidia-jetson-series"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">NVIDIA Jetson Series</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/yichingTest/docs/jetson series/PE2100N PE2101N"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">PE2100N, PE2101N</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#1-flash-image" class="table-of-contents__link toc-highlight">1. Flash Image</a><ul><li><a href="#11-recovery-mode" class="table-of-contents__link toc-highlight">1.1 Recovery Mode</a></li><li><a href="#12-flash-image" class="table-of-contents__link toc-highlight">1.2 Flash Image</a></li></ul></li><li><a href="#2-build-image" class="table-of-contents__link toc-highlight">2. Build Image</a><ul><li><a href="#21-jetpack-60-image" class="table-of-contents__link toc-highlight">2.1 Jetpack 6.0 image</a></li><li><a href="#22-jetpack-62-image" class="table-of-contents__link toc-highlight">2.2 Jetpack 6.2 image</a></li></ul></li><li><a href="#3-upgrade-to-jetpack-61" class="table-of-contents__link toc-highlight">3. Upgrade to Jetpack 6.1</a></li><li><a href="#4-backup-and-restore-os-image" class="table-of-contents__link toc-highlight">4. Backup and Restore OS image</a></li><li><a href="#5-os-and-nvidia-sdk-version-mapping-table" class="table-of-contents__link toc-highlight">5. OS and NVIDIA SDK Version Mapping Table</a></li><li><a href="#6-lte-setting" class="table-of-contents__link toc-highlight">6. LTE Setting</a><ul><li><a href="#61-how-to-set-up-a-sim-card" class="table-of-contents__link toc-highlight">6.1 How to set up a SIM card</a></li><li><a href="#62-how-to-switch-sim-card-slot" class="table-of-contents__link toc-highlight">6.2 How to switch SIM card slot</a></li><li><a href="#63-how-to-check-sim-card-status" class="table-of-contents__link toc-highlight">6.3 How to check SIM card status</a></li></ul></li><li><a href="#7-switching-m2-com-mode-and-sim" class="table-of-contents__link toc-highlight">7. Switching M.2, COM Mode, and SIM</a></li><li><a href="#8-switch-dio-instructions" class="table-of-contents__link toc-highlight">8. Switch DIO Instructions</a></li><li><a href="#9-led-functions" class="table-of-contents__link toc-highlight">9. LED Functions</a><ul><li><a href="#91-turn-onoff-led" class="table-of-contents__link toc-highlight">9.1 Turn on/off LED</a></li><li><a href="#92-disable-kernel-led-function" class="table-of-contents__link toc-highlight">9.2 Disable kernel LED function</a></li><li><a href="#93-recover-kernel-led-function" class="table-of-contents__link toc-highlight">9.3 Recover Kernel LED function</a></li></ul></li><li><a href="#10-others" class="table-of-contents__link toc-highlight">10. Others</a><ul><li><a href="#101-asus-api" class="table-of-contents__link toc-highlight">10.1 ASUS API</a></li><li><a href="#102-get-console-log" class="table-of-contents__link toc-highlight">10.2 Get Console Log</a></li></ul></li><li><a href="#11-demo--intelligent-video-analytics" class="table-of-contents__link toc-highlight">11. Demo : Intelligent Video Analytics</a><ul><li><a href="#111-metropolis-microservices-for-jetson" class="table-of-contents__link toc-highlight">11.1 Metropolis Microservices for Jetson</a></li><li><a href="#112-running-deepstream-python-samples" class="table-of-contents__link toc-highlight">11.2 Running DeepStream Python samples</a></li><li><a href="#113-visual-language-models-vlm-for-jetson" class="table-of-contents__link toc-highlight">11.3 Visual Language Models (VLM) for Jetson</a></li></ul></li><li><a href="#12-device-management---aicc" class="table-of-contents__link toc-highlight">12. Device Management - AICC</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/yichingTest/docs/intro">Tutorial</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/yichingTest/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
